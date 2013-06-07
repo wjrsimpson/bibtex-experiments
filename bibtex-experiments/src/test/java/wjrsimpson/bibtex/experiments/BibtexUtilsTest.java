@@ -72,7 +72,7 @@ public class BibtexUtilsTest {
     @Ignore("Seems to go into infinite loop")
     @Test
     public void testValidityOfUnclosedBibtex() {
-        assertFalse(BibtexUtils.isValid("@article{RoeverEtAl2007a,\n\nauthor = {R\\"));
+        assertFalse(BibtexUtils.isValid("@article{RoeverEtAl2007a,\n\nauthor = {R"));
     }
 
 }

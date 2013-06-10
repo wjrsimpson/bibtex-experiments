@@ -5,7 +5,6 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 
 import org.jbibtex.ObjectResolutionException;
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class BibtexUtilsTest {
@@ -69,7 +68,6 @@ public class BibtexUtilsTest {
                         + "\n" + "number = {11},\n" + "\n" + "doi = {10.1371/journal.pgen.1002992}\n" + "\n" + "}"));
     }
 
-    @Ignore("Seems to go into infinite loop")
     @Test
     public void testValidityOfUnclosedBibtex() {
         assertFalse(BibtexUtils.isValid("@article{RoeverEtAl2007a,\n\nauthor = {R"));
